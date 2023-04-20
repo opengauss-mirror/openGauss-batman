@@ -41,7 +41,6 @@
 		<hutool.version>5.8.11</hutool.version>
 		<lombok.version>1.18.24</lombok.version>
 		<jsch.version>0.1.55</jsch.version>
-		<codec.version>1.15</codec.version>
 	</properties>
 
 	<dependencies>
@@ -182,11 +181,6 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
 			<version>4.4.15</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>${codec.version}</version>
 		</dependency>
 	</dependencies>
 

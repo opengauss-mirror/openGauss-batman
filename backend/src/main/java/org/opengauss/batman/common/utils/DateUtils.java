@@ -26,7 +26,7 @@ public class DateUtils {
 
 	private static final String DATE_PATTERN = "yyyy-MM-dd";
 
-    private static final String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm:ss";
+//    private static final String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm:ss";
 
     /**
      * 日期格式化 日期格式为：yyyy-MM-dd

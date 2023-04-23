@@ -105,10 +105,13 @@ CREATE TABLE IF NOT EXISTS sys_log (
   PRIMARY KEY (id)
 );
 
-INSERT INTO sys_user (user_id, username, password, salt, email, mobile, status, create_user_id, create_time) VALUES ('1', 'admin', '9ec9750e709431dad22365cabc5c625482e574c74adaebba7dd02f1129e4ce1d', 'YzcmCZNvbXocrsz9dm8e', 'contact@opengauss.org', '19612345678', '1', '1', now())
-ON conflict(user_id)
-DO UPDATE SET
-create_time = now();
+-- INSERT INTO sys_user (user_id, username, password, salt, email, mobile, status, create_user_id, create_time) VALUES ('1', 'admin', '9ec9750e709431dad22365cabc5c625482e574c74adaebba7dd02f1129e4ce1d', 'YzcmCZNvbXocrsz9dm8e', 'contact@opengauss.org', '19612345678', '1', '1', now())
+-- ON conflict(user_id)
+-- DO UPDATE SET
+-- create_time = now();
+-- 兼容openGauss,不使用ON conflict
+DELETE FROM sys_user WHERE user_id = '1';
+INSERT INTO sys_user (user_id, username, password, salt, email, mobile, status, create_user_id, create_time) VALUES ('1', 'admin', '9ec9750e709431dad22365cabc5c625482e574c74adaebba7dd02f1129e4ce1d', 'YzcmCZNvbXocrsz9dm8e', 'contact@opengauss.org', '19612345678', '1', '1', now());
 
 --  quartz自带表结构
 CREATE TABLE IF NOT EXISTS qrtz_job_details

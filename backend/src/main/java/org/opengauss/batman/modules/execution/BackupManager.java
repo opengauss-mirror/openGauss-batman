@@ -9,7 +9,7 @@
 package org.opengauss.batman.modules.execution;
 
 import com.jcraft.jsch.Session;
-import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.opengauss.batman.common.Const;

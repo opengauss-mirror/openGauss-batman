@@ -26,7 +26,6 @@ public class DateUtils {
 
 	private static final String DATE_PATTERN = "yyyy-MM-dd";
 
-    private static final String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm:ss";
 
     /**
      * 日期格式化 日期格式为：yyyy-MM-dd
@@ -40,7 +39,7 @@ public class DateUtils {
     /**
      * 日期格式化 日期格式为：yyyy-MM-dd
      * @param date  日期
-     * @param pattern  格式，如：DateUtils.DATE_TIME_PATTERN
+     * @param pattern  格式，如：yyyy-MM-dd HH:mm:ss
      * @return  返回yyyy-MM-dd格式日期
      */
     public static String format(Date date, String pattern) {
@@ -54,7 +53,7 @@ public class DateUtils {
     /**
      * 字符串转换成日期
      * @param strDate 日期字符串
-     * @param pattern 日期的格式，如：DateUtils.DATE_TIME_PATTERN
+     * @param pattern 日期的格式，如：yyyy-MM-dd HH:mm:ss
      */
     public static Date stringToDate(String strDate, String pattern) {
         if (StringUtils.isNotBlank(strDate)) {

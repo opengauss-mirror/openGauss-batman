@@ -1,9 +1,6 @@
 /**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
+ * copyright owner or entity authorized by the copyright.
  *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
  */
 
 package org.opengauss.batman.common.utils;

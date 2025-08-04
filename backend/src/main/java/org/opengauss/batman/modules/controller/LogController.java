@@ -1,9 +1,7 @@
 /**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
+ * copyright owner or entity authorized by the copyright.
+ * (C) 2007 Free Software Foundation; Inc. [http: fsf.org ]
  *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
  */
 
 package org.opengauss.batman.modules.controller;

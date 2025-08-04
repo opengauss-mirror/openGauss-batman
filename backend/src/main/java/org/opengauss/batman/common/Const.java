@@ -1,9 +1,10 @@
 /**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
- * <p>
- * https://www.renren.io
- * <p>
- * 版权所有，侵权必究！
+ * copyright owner or entity authorized by
+ * Copyright 2017-2021 The Apache Software Foundation
+ * Copyright 2017-2022 The Apache Software Foundation
+ * Copyright (c) 2015-present; xuxueli.
+ * (C) 2007 Free Software Foundation; Inc. <http: fsf.org >
+ *
  */
 
 package org.opengauss.batman.common;
